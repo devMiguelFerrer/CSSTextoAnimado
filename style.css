@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 8rem;
+  background-image: url('galaxy.jpg');
+  background-position: center;
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBgImg 8s linear infinite;
+  -webkit-animation: moveBgImg 8s linear infinite;
+}
+
+@keyframes moveBgImg {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}
